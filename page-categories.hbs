@@ -5,12 +5,12 @@ You must first create a page called Tags in the dashboard to enable it.
 
 {{!-- This block preloads specific assets for the tags page --}}
 {{#contentFor "preload"}}
-  <link rel="preload" href="{{asset "css/tags.css"}}" as="style" >
+  <link rel="preload" as="style" href="{{asset "built/categories.css"}}">
 {{/contentFor}}
 
 {{!-- This block loads specific styles for the tags page --}}
 {{#contentFor "styles"}}
-  <link rel="stylesheet" type="text/css" href="{{asset "css/tags.css"}}" media="screen" />
+  <link rel="stylesheet" type="text/css" href="{{asset "built/categories.css"}}">
 {{/contentFor}}
 
 {{!-- The tag below means: insert everything in this file
